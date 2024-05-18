@@ -7,7 +7,7 @@ var=${Battery_val::-1} # remove (%)
 echo $var
 while [ true ]
 do
-    if [ ${var} -lt 120 ]
+    if [ ${var} -lt 50 ]
     then
         notify-send "Battery less than 50%, connect the charger"    
         sleep 5
