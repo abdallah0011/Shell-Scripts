@@ -26,7 +26,7 @@ fi
 SUCCESS=" 0% packet"
 
 
-for (( i=1; i < $range; i++))
+for (( i=1; i <= $range; i++))
 do
     var=$(ping "192.168.1.${i}" -c ${count} -W ${timeout})
     # echo $var
